@@ -27,7 +27,7 @@ defmodule Hayago.State do
 
   alias Hayago.State
 
-  defstruct positions: Enum.map(1..81, fn _ -> nil end),
+  defstruct positions: Enum.map(1..169, fn _ -> nil end),
             current: :black,
             captures: %{black: 0, white: 0}
 
