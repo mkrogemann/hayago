@@ -23,7 +23,7 @@ defmodule Hayago.Game do
   defstruct history: [%State{}], index: 0
   use GenServer, restart: :transient
 
-  @timeout 600_000
+  @timeout 60_000_000
 
   def start_link(options) do
     GenServer.start_link(__MODULE__, %Game{}, options)
